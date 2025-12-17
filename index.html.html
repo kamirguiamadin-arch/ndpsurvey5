@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heyyy Kimmm :&gt;</title>
+
+  <!-- Spotify Embed (Mundo - IV of Spades) -->
+  <!-- Music will only play when user presses play (browser-safe & non-suspicious) -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .card {
+      background: white;
+      width: 100%;
+      max-width: 480px;
+      padding: 2rem;
+      border-radius: 22px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      animation: floatIn 1s ease;
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #ff5fa2;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .heart {
+      text-align: center;
+      font-size: 2.8rem;
+      animation: beat 1.5s infinite;
+      margin: 1rem 0;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    p {
+      color: #555;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .poem {
+      font-style: italic;
+      background: #fff4fa;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-bottom: 1.2rem;
+    }
+
+    .button {
+      display: block;
+      text-align: center;
+      background: #ff5fa2;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      margin: 1.5rem auto 0;
+      width: fit-content;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #ff3f8c;
+      transform: translateY(-2px);
+    }
+
+    iframe {
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Heyyy Kim 🌸</h1>
+    <div class="heart">💗</div>
+
+    <!-- Music Section (Autoplay-safe workaround) -->
+    <!-- Browsers block autoplay with sound. This plays muted first, then user can tap to unmute -->
+    <div style="margin:1rem 0; text-align:center;">
+      <audio id="bgMusic" autoplay loop muted>
+        <!-- Upload Mundo.mp3 to the same folder and rename it mundo.mp3 -->
+        <source src="mundo.mp3" type="audio/mpeg" />
+      </audio>
+      <button id="musicBtn" class="button" style="margin-top:0.5rem;">Tap to play Mundo 🎵</button>
+    </div>
+
+    <script>
+      const music = document.getElementById('bgMusic');
+      const btn = document.getElementById('musicBtn');
+      btn.addEventListener('click', () => {
+        music.muted = false;
+        music.play();
+        btn.textContent = 'Music playing ♫';
+        btn.style.opacity = '0.8';
+      });
+    </script>
+
+    <div class="poem">
+      Roses are red, Violets are blue,<br />
+      I lost all my courage The moment I saw you.<br />
+      It’s "fight or flight," And I always choose flight—<br />
+      I’ll be three blocks away by the end of the time.
+    </div>
+
+    <p>
+      Hey Kimm, So this is it pancit. Howww should I start thisss huhuhu... eto na. Kimm you've probably notice how avoidant I am in public, how I try to avoid you as much as I can and incase you don't know I like you. That's why I'm running suddenly when you're near and especially if their are people who knows that I like you. It's not that I don't want to talk to you even though you've insisted several times engaging with me, it's my brain that just says " run " automatically and me unconsciously running and starting to panic.
+    </p>
+
+    <p>
+      I started liking you way back before buwan ng wika where it all started, there was a day I couldn't help but notice you everywhere I go in campus. I would unintentionally ran into you sa hallway, always. like literally always. And starting from that point I often catch myself looking for you like my day isn't complete whenever I don't see you. You've become a part of my day.
+    </p>
+
+    <p>
+      It's your intimidating walk, how you handle yourself, and how calm your presence is that caught my attention—it's like you possess a kind of quiet power. You make me ridiculously nervous, but also completely captivated, Everyone else disappears, and my brain panics because you're the only thing I can focus on. In short your cool af and if ever no one has ever told you, your smile is one of the best thing I've ever seen in my life.
+    </p>
+
+    <p>
+      Buwan ng wika came, and we were practicing your runway walk sa stage sa taas ng cafeteria. I remember so well KIA is behind all of this. you were just supposed to be a happy crush nothing less, nothing more but when my mouth slipped while talking to kia nalaman niya na I like you and sinabi niya sayo na napopogian ako sayo. And from that onwards my feelings for you kept on growing. And dun lumala yung pag iwas ko sayo because starting that day i don't know how or paano nalaman ng iba na I like you. And I kinda feel humiliated from the attention of many people, made me feel like I couldn't face you anymore.
+    </p>
+
+    <p>
+      So, I’m sending this because I needed to finally be honest and stop letting my fear control me. I really, really like you, Kim.
+    </p>
+
+    <p>
+      I want to be clear: I am not sending this to pressure you to like me back, or to start anything at all. I just genuinely needed you to know exactly how much I like you and why I've been acting like a complete weirdo running away from you. That is all.
+    </p>
+
+    <p>
+      This is also for me, too. I feel like saying this out loud is the only way I can finally process and move on from these feelings of mine, whether you feel the same way or not.
+    </p>
+
+    <p>
+      No matter what you decide, please take your time. If nothing else, I really hope this means I can finally stop running and we can actually be friends. I honestly value you a lot, and I hope this doesn't make things awkward for us. I'm okay with whatever you choose.
+    </p>
+
+    <p>
+      Okayyy, I feel much better having gotten that off my chest! Take care, Kimmm. Hope you have a great long weekend!!! Have a good night, Kimmm:&gt;
+    </p>
+
+    <a class="button" href="https://m.me/YOUR_MESSENGER_USERNAME" target="_blank">You can respond on Messenger 🤍</a>
+
+    <div class="footer">
+      Thank you for reading this. Have a great long weekend 🌙
+    </div>
+  </div>
+</body>
+</html>
